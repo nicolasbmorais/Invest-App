@@ -1,4 +1,4 @@
-# invest_app
+# Invest-App
 
 A new Flutter project.
 
