@@ -1,0 +1,85 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "invest_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        // {
+        //     "name": "invest_app (profile mode)",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "invest_app (release mode)",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // },
+        // {
+        //     "name": "auth_service",
+        //     "cwd": "packages\\auth_service",
+        //     "request": "launch",
+        //     "type": "dart"
+        // },
+        // {
+        //     "name": "auth_service (profile mode)",
+        //     "cwd": "packages\\auth_service",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "auth_service (release mode)",
+        //     "cwd": "packages\\auth_service",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // },
+        // {
+        //     "name": "common",
+        //     "cwd": "packages\\common",
+        //     "request": "launch",
+        //     "type": "dart"
+        // },
+        // {
+        //     "name": "common (profile mode)",
+        //     "cwd": "packages\\common",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "common (release mode)",
+        //     "cwd": "packages\\common",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // },
+        // {
+        //     "name": "shared_components",
+        //     "cwd": "packages\\shared_components",
+        //     "request": "launch",
+        //     "type": "dart"
+        // },
+        // {
+        //     "name": "shared_components (profile mode)",
+        //     "cwd": "packages\\shared_components",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "profile"
+        // },
+        // {
+        //     "name": "shared_components (release mode)",
+        //     "cwd": "packages\\shared_components",
+        //     "request": "launch",
+        //     "type": "dart",
+        //     "flutterMode": "release"
+        // }
+    ]
+}
