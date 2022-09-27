@@ -34,7 +34,7 @@ class _AppFirebaseState extends State<AppFirebase> {
           } else {
             return const Material(
               child: Center(
-                child: CircularProgressIndicator(),
+                child: CircularProgressIndicator()
               ),
             );
           }
