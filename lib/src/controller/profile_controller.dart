@@ -1,10 +1,9 @@
+import 'package:auth_service/auth_service.dart';
 import 'package:common/common.dart';
 import 'package:flutter/material.dart';
 
 class ProfileController extends GetxController {
   RxString imageData = ''.obs;
-  final FirebaseAuth auth = FirebaseAuth.instance;
-  User? user;
 
   Future<void> pickImage() async {
     try {
@@ -21,7 +20,7 @@ class ProfileController extends GetxController {
   }
 
   Future<void> setProfilePhoto(String photoURL) async {
-    await auth.currentUser!.updatePhotoURL(photoURL);
+    await AuthService.to.user.updatePhotoURL(photoURL);
     update();
   }
 }

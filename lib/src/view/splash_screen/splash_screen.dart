@@ -2,12 +2,12 @@ import 'package:auth_service/auth_service.dart';
 import 'package:common/common.dart';
 import 'package:flutter/material.dart';
 
-class SplashScreen extends GetResponsiveView<AuthServiceController> {
+class SplashScreen extends GetResponsiveView {
   SplashScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    controller.currentUser(context);
+    AuthService.to.currentUser();
     return Scaffold(
       body: Container(
         color: ColorPalette.white,

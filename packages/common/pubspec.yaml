@@ -16,7 +16,6 @@ dependencies:
   firebase_auth: ^3.7.0
   get: ^4.6.5
   font_awesome_flutter: ^10.1.0
-  shared_preferences: ^2.0.15
   image_picker: ^0.8.5+3
 
 dev_dependencies:

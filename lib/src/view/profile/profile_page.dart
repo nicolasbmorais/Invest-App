@@ -1,14 +1,11 @@
 import 'dart:io';
+import 'package:auth_service/auth_service.dart';
 import 'package:common/common.dart';
 import 'package:flutter/material.dart';
-import 'package:invest_app/src/controller/login_controller.dart';
-import 'package:invest_app/src/controller/profile_controller.dart';
 import 'package:shared_components/shared_components.dart';
 
 class ProfilePage extends GetResponsiveView {
   ProfilePage({Key? key}) : super(key: key);
-  final ProfileController profileController = Get.find<ProfileController>();
-  final LoginController _loginController = Get.find<LoginController>();
 
   @override
   Widget build(BuildContext context) {
@@ -37,32 +34,34 @@ class ProfilePage extends GetResponsiveView {
                       child: SizedBox.fromSize(
                         size: const Size.fromRadius(48),
                         child: Image.file(
-                          File(profileController.auth.currentUser!.photoURL ?? AppImages.profileImage),
+                          fit: BoxFit.cover,
+                          File(AuthService.to.user.photoURL ?? AppImages.profileImage),
                         ),
                       ),
+                      
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 20, bottom: 8),
-                    child: Text(_loginController.fullName.value, style: TextStyles.title2),
+                    child: Text(AuthService.to.user.displayName!, style: TextStyles.title2),
                   ),
                   Text('Especialista', style: TextStyles.bodyRegularBlack),
                   const SizedBox(height: 20),
                   ProfileListTile(
-                    icon: Icons.contact_page_sharp,
+                    icon: Icons.account_circle,
                     title: 'Informações de contato',
                     onTap: () => Get.toNamed(Routes.contactInfoPage),
                   ),
                   ProfileListTile(
-                    icon: Icons.food_bank,
+                    icon: Icons.account_balance_rounded,
                     title: 'Informações bancárias',
                     onTap: () => Get.toNamed('page'),
                   ),
                   ProfileListTile(
                       icon: Icons.settings,
                       title: 'Sair',
-                      onTap: () async {
-                        await profileController.pickImage();
+                      onTap: () {
+                        AuthService.to.logout();
                       })
                 ],
               )

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:invest_app/src/controller/login_controller.dart';
 import 'package:shared_components/shared_components.dart';
 
-class HomePage extends GetResponsiveView<AuthServiceController> {
+class HomePage extends GetResponsiveView<AuthService> {
   HomePage({Key? key}) : super(key: key);
   final LoginController _loginController = Get.find<LoginController>();
 

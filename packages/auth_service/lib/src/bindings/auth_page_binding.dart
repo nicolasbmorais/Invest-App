@@ -4,6 +4,6 @@ import 'package:common/common.dart';
 class AuthPageBinding implements Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<AuthServiceController>(() => AuthServiceController());
+    Get.lazyPut<AuthService>(() => AuthService());
   }
 }
