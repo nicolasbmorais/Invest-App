@@ -10,7 +10,7 @@
 
 - [Descrição do projeto](#descrição-do-projeto)
 
-- [Funcionalidades do projeto](#funcionalidades-do-projeto)
+- [Funcionalidades](#funcionalidades)
 
 - [Aplicação](#aplicação)
 
@@ -29,17 +29,25 @@ App de simulação de uma Fintech de investimentos com a intenção de criar um 
 ![Descrição do projeto Invest App, imagem mostrando um layout de como é o aplicativo.](https://user-images.githubusercontent.com/84995067/191398034-c566fc96-6faa-4532-9c0a-515eac8c769b.jpg)
 </p>
 
-## 🔨 Funcionalidades do projeto
+## Funcionalidades
 
 Faça login ou crie uma conta. Também, é possível alterar nome e foto de perfil. Todo armazenamento de dados do usuário é mantido no Firebase, portanto, ao finalizar o App as informações são mantidas de acordo com o usuário logado.
-
-###
 
 ## Ferramentas utilizadas
 
 <a href="https://dart.dev/" target="_blank"> <img src="https://dart.dev/assets/img/shared/dart/logo+text/horizontal/white.svg" alt="dart" width="80" height="80"/> </a> 
 
 <a href="https://developer.android.com/studio" target="_blank"> <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--6BxHqfkw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/l10fq2kiw28o3mok3v1m.jpg" alt="Getx" width="80" height="50"/> </a> <a href="https://firebase.google.com/?hl=pt" target="_blank"> <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png" alt="firebase" width="50" height="50"/> </a>
+
+###
+
+## Aplicação
+
+<div align="center">
+
+<!-- ![Android Emulator](https://user-images.githubusercontent.com/37356058/135944390-ec96d4ec-ee43-4db9-882f-89be66aad23a.gif) -->
+
+  </div>
 
 ###
 
