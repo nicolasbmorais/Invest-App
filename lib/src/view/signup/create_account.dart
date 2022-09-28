@@ -79,11 +79,7 @@ class CreateAccountPage extends GetResponsiveView {
                   label: 'Criar conta',
                   onPressed: () async {
                     if (formKey.currentState!.validate()) {
-                      await _loginController.register(
-                        email: _loginController.emailController.text,
-                        password: _loginController.passwordController.text,
-                        name: _loginController.userNameController.text,
-                      );
+                      await _loginController.createUser();
                     }
                   },
                 ),

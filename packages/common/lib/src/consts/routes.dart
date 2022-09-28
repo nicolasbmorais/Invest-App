@@ -3,6 +3,7 @@ class Routes {
 
   static const String welcomePage = '/welcome_page';
   static const String homePage = '/home_page';
+  static const String initialPage = '/initial_page';
   static const String splashScreen = '/splash_screen';
   static const String createAccountPage = '/create_account';
   static const String loginPage = '/login_page';

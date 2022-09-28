@@ -8,8 +8,8 @@ import 'package:shared_components/shared_components.dart';
 
 class ContactInfoPage extends GetResponsiveView {
   ContactInfoPage({Key? key}) : super(key: key);
-  final AuthServiceController authServiceController = Get.find<AuthServiceController>();
-  final ProfileController profileController = Get.find<ProfileController>();
+  final AuthService authServiceController = Get.find<AuthService>();
+  final ProfileController profileController = Get.put(ProfileController());
 
   @override
   Widget build(BuildContext context) {
@@ -54,9 +54,9 @@ class ContactInfoPage extends GetResponsiveView {
                           child: SizedBox.fromSize(
                             size: const Size.fromRadius(48),
                             child: Image.file(
-                                    File(profileController.auth.currentUser!.photoURL ?? AppImages.profileImage),
-                                  )
-                               
+                              fit: BoxFit.cover,
+                              File(AuthService.to.user.photoURL ?? AppImages.profileImage),
+                            ),
                           ),
                         ),
                         ClipOval(
@@ -81,14 +81,14 @@ class ContactInfoPage extends GetResponsiveView {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20, bottom: 8),
-                child: Text(authServiceController.auth.currentUser!.displayName!, style: TextStyles.title2),
+                child: Text(AuthService.to.user.displayName!, style: TextStyles.title2),
               ),
               Text('Especialista', style: TextStyles.bodyRegularBlack),
               const SizedBox(height: 20),
               GuideListTile(
                 title: 'Nome',
                 titleStyle: TextStyles.bodySmallTitleInputBlack,
-                subTitle: authServiceController.auth.currentUser!.displayName ?? '',
+                subTitle: AuthService.to.user.displayName ?? '',
                 subtitleTextColor: TextStyles.bodySmallInputBlack,
                 divider: true,
                 suffixText: 'Alterar',
@@ -97,7 +97,7 @@ class ContactInfoPage extends GetResponsiveView {
               GuideListTile(
                 title: 'Email',
                 titleStyle: TextStyles.bodySmallTitleInputBlack,
-                subTitle: authServiceController.auth.currentUser!.email ?? '',
+                subTitle: AuthService.to.user.email ?? '',
                 subtitleTextColor: TextStyles.bodySmallInputBlack,
                 divider: true,
                 suffixText: 'Alterar',
@@ -106,7 +106,7 @@ class ContactInfoPage extends GetResponsiveView {
               GuideListTile(
                 title: 'Número de telefone',
                 titleStyle: TextStyles.bodySmallTitleInputBlack,
-                subTitle: authServiceController.auth.currentUser!.phoneNumber ?? 'Adicionar número de telefone',
+                subTitle: AuthService.to.user.phoneNumber ?? 'Adicionar número de telefone',
                 subtitleTextColor: TextStyles.bodySmallInputBlack,
                 divider: true,
                 suffixText: 'Alterar',
