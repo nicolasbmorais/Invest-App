@@ -48,5 +48,12 @@ Faça login ou crie uma conta. Também, é possível alterar nome e foto de perf
 
 Você pode [acessar o código fonte do projeto](https://github.com/nicolasbrunomorais/Invest-App) ou [baixá-lo](https://github.com/nicolasbrunomorais/Invest-App/files/9612436/Invest-App-main.zip).
 
+## Abrir e rodar o projeto
 
+Após baixar o projeto, você pode abrir com o `Abrir com Code`. Para isso:
+
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo);
+- Clique com o botão direito e use a opção `Abrir com Code`. Caso não apareca abra o terminal e vá até a raiz do projeto e digite `code .`
+
+Quando o Visual Studio Code iniciar, abra o terminal e rode o comando `flutter clean` e em seguida o comando `flutter pub get`, após isso você pode executar o App 🏆 
 
