@@ -50,7 +50,7 @@ Você pode [acessar o código fonte do projeto](https://github.com/nicolasbrunom
 
 ## Abrir e rodar o projeto
 
-Após baixar o projeto, você pode abrir com o `Abrir com Code`. Para isso:
+Após baixar o projeto, você pode abrir com o `Visual Studio Code`. Para isso:
 
 - Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo);
 - Clique com o botão direito e use a opção `Abrir com Code`. Caso não apareca abra o terminal e vá até a raiz do projeto e digite `code .`
