@@ -10,7 +10,7 @@
 
 - [Descrição do projeto](#descrição-do-projeto)
 
-- [Funcionalidades](#funcionalidades)
+- [Funcionalidades do projeto](#funcionalidades-do-projeto)
 
 - [Aplicação](#aplicação)
 
@@ -19,8 +19,7 @@
 - [Acesso ao projeto](#acesso-ao-projeto)
 
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
-
-- [Desenvolvedores](#desenvolvedores)
+- 
 
 ## Descrição do projeto 
 
